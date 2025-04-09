@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karting survey</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="head">
+        <h1 id="title">Karting survey</h1>
+        <p id="description">Let us know your thoughts</p>
+    </div>
+    <form id="survey-form" action="" method="post">
+
+        <fieldset id="part1">
+            <legend>Basic data</legend>
+            <label for="name" id="name-label">DRIVER NAME</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+
+            <label for="email" id="email-label">DRIVER EMAIL</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <label for="number" id="number-label">DRIVER AGE</label>
+            <input type="number" id="number" name="age" pattern="[0-9]" min="8" max="80" placeholder="Age">
+        </fieldset>
+
+        <fieldset id="part2">
+            <legend>License</legend>
+
+            <label for="dropdown">What license did you choose?</label>
+            <select id="dropdown">
+                <option>Rookie</option>
+                <option>Amateur</option>
+                <option>Pro</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset id="part3">
+            <legend>Would you run with us again?</legend>
+
+            <label for="yes">Yes <input type="radio" name="race-again" id="yes" value="yes" checked></label>
+            
+            <label for="no">No <input type="radio" name="race-again" id="no" value="no"></label>
+            
+            <label for="maybe">Maybe <input type="radio" name="race-again" id="maybe" value="maybe"></label>
+            
+            <label for="idk">I don't know now <input type="radio" name="race-again" id="idk" value="idk"></label>
+            
+
+        </fieldset>
+
+        <fieldset id="part4">
+            <legend>What promotions would you like to have?</legend>
+
+            <label for="loyalty-cards">Loyalty cards <input type="checkbox" id="loyalty-cards" value="loyalty-cards" name="promos"></label>
+            
+
+            <label for="discounts-races">Discounts on races <input type="checkbox" id="discounts-races" value="discounts-races" name="promos"></label>
+            
+
+            <label for="more-laps">More laps per race <input type="checkbox" id="more-laps" value="more-laps" name="promos"></label>
+            
+
+            <label for="others">Others <input type="checkbox" id="others" value="others" name="promos"></label>
+            
+        </fieldset>
+
+        <fieldset id="part5">
+            <legend>Tell us how was your experience</legend>
+            <textarea cols="30" rows="3" placeholder="My experience was..."></textarea>
+        </fieldset>
+
+        <button type="submit" value="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
