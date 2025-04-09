@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./styles.css">
+      <title>Documentación basica Python</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Documentación básica Python</header>
+      <ul>
+        <li><a href="#¿Qué_es_Python?" class="nav-link">¿Qué es Python?</a></li>
+        <li><a href="#Beneficios_de_Python" class="nav-link">Beneficios de Python</a></li>
+        <li><a href="#Primeros_pasos" class="nav-link">Primeros pasos</a></li>
+        <li><a href="#Tipos_de_datos" class="nav-link">Tipos de datos</a></li>
+        <li><a href="#Estructura_de_control_if-else" class="nav-link">Estructura de control if-else</a></li>
+        <li><a href="#Bucle_for" class="nav-link">Bucle for</a></li>
+        <li><a href="#Referencias" class="nav-link">Referencias</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="¿Qué_es_Python?">
+      <header>¿Qué es Python?</header>
+      <p>Python es un lenguaje de programación ampliamente utilizado en las aplicaciones web, el desarrollo de software, la ciencia de datos y el machine learning (ML). Los desarrolladores utilizan Python porque es eficiente y fácil de aprender, además de que se puede ejecutar en muchas plataformas diferentes. El software Python se puede descargar gratis, se integra bien a todos los tipos de sistemas y aumenta la velocidad del desarrollo.</p>
+    </section>
+    <section class="main-section" id="Beneficios_de_Python">
+      <header>Beneficios de Python</header>
+      <ul>
+        <li><p>Los desarrolladores pueden leer y comprender fácilmente los programas de Python debido a su sintaxis básica similar a la del inglés.</p></li>
+        <li><p>Python permite que los desarrolladores sean más productivos, ya que pueden escribir un programa de Python con menos líneas de código en comparación con muchos otros lenguajes.</p></li>
+        <li><p>Python permite que los desarrolladores sean más productivos, ya que pueden escribir un programa de Python con menos líneas de código en comparación con muchos otros lenguajes.</p></li>
+        <li><p>Python cuenta con una gran biblioteca estándar que contiene códigos reutilizables para casi cualquier tarea. De esta manera, los desarrolladores no tienen que escribir el código desde cero.</p></li>
+        <li><p>Los desarrolladores pueden utilizar Python fácilmente con otros lenguajes de programación conocidos, como Java, C y C++</p></li>
+      </ul>
+    </section>
+    <section class="main-section" id="Primeros_pasos">
+      <header>Primeros pasos</header>
+      <p>Una de las primeras cosas que se enseña es el famoso "Hola, mundo" asi que empezaremos por ahi.</p>
+      <p>En Python el "Hola, mundo se escribe de la siguiente manera:</p>
+      <p><code>print("Hola, mundo")</code></p>
+      <p>En Python se usa la función <code>print()</code> para mostrar elementos. Luego la parte del texto va entre comillas porque es un valor de tipo str (string) que se usa para mostrar secuencias de caracteres.</p>
+    </section>
+    <section class="main-section" id="Tipos_de_datos">
+      <header>Tipos de datos</header>
+      <p>Un tipo de dato se refiere a la clasificación de los valores que pueden ser almacenados en una variable. Cada tipo de dato tiene características y propiedades específicas que lo hacen adecuado para ciertos usos y operaciones.</p>
+      <p>Los tipos de datos también se utilizan para determinar cómo se almacenan los valores en la memoria de la computadora y cómo se pueden manipular y operar los valores. Por ejemplo, los números enteros se almacenan como secuencias de bits en la memoria, y se pueden realizar operaciones aritméticas como suma, resta, multiplicación y división.</p>
+      <ul>
+        <li>Tipos de datos numéricos
+          <ul>
+            <li>int
+              <p class="sangria">Los datos tipo int (abreviatura de «entero»), en Python, son aquellos que representan números enteros. Estos son un tipo de número que no tiene parte decimal, es decir, son completos sin fracciones.</p>
+<p class="sangria">En Python, los datos tipo int se representan simplemente escribiendo un número sin parte decimal. Por ejemplo:
+1, 2, 3, 4, 5</p>
+            </li>
+            <li>float
+              <p class="sangria">Los datos tipo float (abreviatura de «coma flotante»), en Python, son aquellos que representan números con decimales. En otras palabras, los datos tipo float son números reales que pueden tener una parte entera y una parte decimal.</p>
+<p class="sangria">En Python, los datos tipo float se representan escribiendo un número con un punto decimal. Por ejemplo:
+1.23, 3.14, 45.5, -12.34</p>
+            </li>
+            <li>complex
+              <p class="sangria">Los datos tipo complex (abreviatura de «números complejos»), en Python, son aquellos que representan números que tienen una parte real y una parte imaginaria. En matemáticas, los números complejos se definen como la suma de una parte real y una parte imaginaria multiplicada por la unidad imaginaria (que se denota como «i» o «j»). 
+<p class="sangria">Los datos tipo complex se representan escribiendo un número real seguido por una «j» para indicar la parte imaginaria.</p>
+<p class="sangria">Los siguientes, son ejemplos de datos tipo complex en Python:</p>
+
+3 + 2j, -7.5 - 1j, 2j</p>
+            </li>
+          </ul>  
+        </li>
+        <li>Tipos de texto
+          <ul>
+            <li>str
+              <p class="sangria">Los datos tipo str (abreviatura de «cadena de caracteres» o «string»), en Python, son aquellos que representan una secuencia de caracteres. En otras palabras, los datos tipo string son texto que se puede representar mediante una serie de caracteres (letras, números, símbolos, etcétera). Los datos tipo string se representan entre comillas simples ('') o dobles ("").</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          Tipos booleanos
+          <ul>
+            <li>bool
+              <p class="sangria">Los datos tipo bool (abreviatura de «booleanos»), en Python, son aquellos que representan valores de verdad. En otras palabras, son valores verdaderos o falsos. En Python, los datos tipo bool se representan como True o False (con la primera letra en mayúscula).</p>
+            </li>
+          </ul>
+        </li>
+        <li>
+          Tipos de secuencias
+          <ul>
+            <li>list
+              <p class="sangria">Los datos tipo list (abreviatura de «listas»), en Python, son aquellos que representan una colección ordenada de elementos. En otras palabras, las listas son una estructura de datos que permite almacenar múltiples valores en un solo objeto y acceder a ellos por su posición en la lista.</p>
+<p class="sangria">En Python, los datos tipo lista se representan mediante corchetes «[ ]» que contienen los elementos de la lista separados por comas. Los elementos pueden ser de cualquier tipo de datos, incluyendo otros objetos, como otras listas.</p>
+            </li>
+            <li>tuple
+              <p class="sangria">Los datos tipo tuple (abreviatura de «tuplas»), en Python, son similares a las listas, pero a diferencia de las listas, son inmutables. En otras palabras, las tuplas son una estructura de datos que permite almacenar múltiples valores en un solo objeto y acceder a ellos por su posición en la tupla, pero una vez creada la tupla, los elementos no pueden modificarse.</p>
+              <p class="sangria">Los datos tipo tupla se representan mediante paréntesis «( )» que contienen los elementos de la tupla separados por comas. Los elementos pueden ser de cualquier tipo de datos, incluyendo otros objetos, como otras tuplas.
+Por ejemplo:
+(1, 2, 3, 4, 5), ('a', 'b', 'c'), (1, 'a', True, (2, 3, 4))</p>
+            </li>
+            <li>
+              range
+              <p class="sangria">Los datos tipo range, en Python, representan una secuencia inmutable de números enteros. Un objeto de tipo range se utiliza comúnmente para generar una secuencia de números enteros para su uso en un bucle for.</p>
+              <p class="sangria">La función range() devuelve un objeto de tipo range. El objeto range toma tres argumentos: el valor inicial, el valor final (no incluido en la secuencia) y el tamaño del paso. Por defecto, el valor inicial es 0 y el tamaño del paso es 1.
+Por ejemplo:
+range(0, 10, 1), range(0, 10), range(1, 11, 2)</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p>Entre otros.</p>
+    </section>
+    <section class="main-section" id="Estructura_de_control_if-else">
+      <header>Estructura de control if-else</header>
+      <p>La estructura de control if ... permite que un programa ejecute unas instrucciones cuando se cumplan una condición. En inglés "if" significa "si" (condición).</p>
+      <p>La sintaxis de if es la siguiente:</p>
+      <p><code>if condición:</code></p>
+      <p class="sangria"><code>(acciones a ejecutar)</code></p>
+      <p>Veamos un ejemplo</p>
+      <p><code>numero=int(input("escriba un número positivo))</code></p>
+      <p><code>if numero < 0:</code></p>
+      <p class="sangria"><code>print(Por favor, escriba un número positivo)</code></p>
+      <p><code>print("Ha escrito{numero}")</code></p>
+      <p>Estructura if-else</p>
+      <p>La estructura de control if ... else ... permite que un programa ejecute unas instrucciones cuando se cumple una condición y otras instrucciones cuando no se cumple esa condición. En inglés "if" significa "si" (condición) y "else" significa "si no"</p>
+      <p>La sintaxis es la siguiente:
+      </p>
+      <p><code>if condición:</code></p>
+      <p class="sangria"><code>(acciones a ejecutar si la condición es verdadera)</code></p>
+      <p><code>else:</code></p>
+      <p class="sangria"><code>(acciones a ejecutar si la condición es falsa)</code></p>
+      <p>Veamos un ejemplo:</p>
+      <p><code>edad=int(input("¿Cuantos años tiene?"))</code></p>
+      <p><code>if edad > 18:</code></p>
+      <p class="sangria"><code>print("Es mayor de edad")</code></p>
+      <p><code>else:</code></p>
+      <p class="sangria"><code>print("Es menor de edad")</code></p>
+    </section>
+    <section class="main-section" id="Bucle_for">
+      <header>Bucle for</header>
+      <p>En general, un bucle es una estructura de control que repite un bloque de instrucciones. Un bucle for es un bucle que repite el bloque de instrucciones un número prederminado de veces. El bloque de instrucciones que se repite se suele llamar cuerpo del bucle y cada repetición se suele llamar iteración.</p>
+      <p>La sintaxis de un bucle for es la siguiente:</p>
+      <p><code>for variable in elemento iterable (lista, cadena, range, etc.):</code></p>
+      <p class="sangria"><code>cuerpo del bucle</code></p>
+      <p>No es necesario definir la variable de control antes del bucle, aunque se puede utilizar como variable de control una variable ya definida en el programa.</p>
+      <p>El cuerpo del bucle se ejecuta tantas veces como elementos tenga el elemento recorrible (elementos de una lista o de un range(), caracteres de una cadena, etc.)</p>
+      <p>Veamos un ejemplo</p>
+      <p><code>for i in [1,2,3]:</code></p>
+      <p class="sangria"><code>print(hola)</code></p>
+      <p>El anterior codigo imprimira hola tres veces en una columna como:</p>
+      <p>hola</p>
+      <p>hola</p>
+      <p>hola</p>
+      <p>En los ejemplos anteriores, la variable de control "i" no se utilizaba en el bloque de instrucciones, pero en muchos casos sí que se utiliza. Cuando se utiliza, hay que tener en cuenta que la variable de control va tomando los valores del elemento recorrible.</p>
+    </section>
+    <section class="main-section" id="Referencias">
+      <header>Referencias</header>
+      <p>La información de esta pagina fue extraida de:</p>
+      <ul>
+        <li><a href="https://www.freecodecamp.org/espanol/news/python-tutorial-programa-hola-mundo-tu-primer-programa-en-python/" target="_blank">Python Tutorial Programa Hola Mundo</a></li>
+        <li><a href="https://aws.amazon.com/es/what-is/python/" target="_blank" >¿Qué es Python?</a></li>
+        <li><a href="https://blog.hubspot.es/website/tipos-de-datos-python" target="_blank">Tipos de datos en Python: numéricos, secuencias, mapeo y más</a></li>
+        <li><a href="https://www.mclibre.org/consultar/python/index.html" target="_blank">Introducción a la programación con Python</a></li>
+      </ul>
+      <p>También puede visitar la <a href="https://python-docs-es.readthedocs.io/es/3.12/">documentación de Python en español</a></p>
+    </section>
+    </main>
+  </body>
+</html>
