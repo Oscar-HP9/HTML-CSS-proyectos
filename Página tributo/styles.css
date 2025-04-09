@@ -1,0 +1,84 @@
+*{
+    font-family: 'Montserrat', Cambria, serif;
+  }
+  
+  header{
+    width: 100%;
+    text-align: center;
+  }
+  
+  header h1{
+    font-size: 45px;
+    border-bottom: 5px solid gray;
+    padding-bottom: 10px;
+  }
+  
+  header p{
+    font-size: 25px;
+  }
+  
+  #img-div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 15px auto;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  #image{
+    max-width: 100%;
+    min-width: 200px;
+    border-radius: 10px;
+    margin: 10px auto;
+  }
+  
+  #tribute-info{
+    font-size: 18px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: justify;
+  }
+  
+  ul {
+    list-style-type: square;
+  }
+  
+  li{
+    padding: 15px 0;
+  }
+  
+  #fangio-nurb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    margin: 15px auto;
+  }
+  
+  #nurburg{
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px;
+  }
+  
+  #link{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  a{
+    color: #380370;
+     text-decoration: none;
+  }
+  
+  a:hover{
+    background-color: #380370;
+    color: white;
+  }
