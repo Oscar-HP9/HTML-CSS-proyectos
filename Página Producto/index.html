@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Pagina inicio Kartking
+    </title>
+  </head>
+  <body>
+    <header id="header">
+      <img src="https://i.ibb.co/zWCzb136/Kartking.jpg" alt="Kartking" border="0" id="header-img">
+      <nav id="nav-bar">
+        <ul id="links">
+          <li><a href="#oferta" class="nav-link">Oferta</a></li>
+          <li><a href="#media" class="nav-link">Media</a></li>
+          <li><a href="#licencias" class="nav-link">Licencias</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="txt-cent">Pagina principal</h1>
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
+        <label for="email">Ingrese su correo para recibir información.</label>
+        <input type="email" placeholder="CORREO AQUI" id="email" name="email" class="txt-cent">
+        <input type="submit" value="SUBMIT" id="submit">
+      </form>
+      <section id="oferta">
+        <h2 class="txt-cent">¿Qué te ofrecemos?</h2>
+        <div class="contenedor">
+          <i class="fas fa-flag-checkered"></i>
+          <p>Instalaciones y equipo de primera para que disfrutes de tus carreras y de la adrenalina de competir.</p>
+        </div>
+        <div class="contenedor">
+          <i class="fas fa-trophy"></i>
+          <p>Campeonatos organizados por nosotros donde puedas competir contra otros pilotos por premios y regalos.</p>
+        </div>
+        <div class="contenedor">
+          <i class="fas fa-stopwatch"></i>
+          <p>Nuestra aplicación para el monitoreo de tus tiempos por vuelta para que puedas ver tu progreso en pista.</p>
+        </div>
+        <div class="contenedor">
+          <i class="fas fa-cogs"></i>
+          <p>Nuestros karts reciben mantenimiento constante para garantizar experiencias sin problemas.</p>
+        </div>
+        <div class="contenedor">
+          <i class="fas fa-gift"></i>
+          <p>Promociones y programas de lealtad para nuestros clientes frecuentes.</p>
+        </div>
+        <div class="contenedor">
+          <i class="fas fa-hamburger"></i>
+          <p>Zonas de comida y recreación para que esperes por tu proxima carrera.</p>
+        </div>
+      </section>
+      <section id="media">
+        <h2 class="txt-cent">Video e imagen ejemplificativo</h2>
+        <iframe width="700" height="415" src="https://www.youtube.com/embed/f2OZRnyhMIo?si=Ilji2OZxkL0N667E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="video"></iframe>
+        <img src="https://images.unsplash.com/photo-1522211041032-a7eb9a3f8c0f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="carrera" id="carrera">
+      </section>
+      <section id="licencias">
+        <h2 class="txt-cent">¿Como empezar a correr?</h2>
+        <p id="txt">Para correr con nosotros necesitas comprar una licencia y despues pagar por carrera o por campeonato que quieras correr, todas las licencias tienen una vigencia de un año y cada una de ellas es detallada a continuación:</p>
+        <div class="contenedor2">
+          <div class="licencia">
+            <h3 class="txt-cent">Rookie</h3>
+            <p class="txt-cent">Precio: <span class="bold">$150</span></p>
+            <h4 class="txt-cent">Ventajas:</h4>
+            <ul>
+              <li>1 carrera a mitad de precio</li>
+            </ul>
+            <button>Seleccionar</button>
+          </div>
+          <div class="licencia">
+            <h3 class="txt-cent">Amateur</h3>
+            <p class="txt-cent">Precio: <span class="bold">$250</span></p>
+            <h4 class="txt-cent">Ventajas:</h4>
+            <ul>
+              <li>2 carreras a mitad de precio</li>
+              <li>25% de descuento en 1 campeonato</li>
+              <li>Descuentos en la zona de comida</li>
+            </ul>
+            <button>Seleccionar</button>
+          </div>
+          <div class="licencia">
+            <h3 class="txt-cent">Pro</h3>
+            <p class="txt-cent">Precio: <span class="bold">$450</span></p>
+            <h4 class="txt-cent">Ventajas:</h4>
+            <ul>
+              <li>2 carreras a mitad de precio</li>
+              <li>2 careras con 25% de descuento</li>
+              <li>25% de descuento en 2 campeonatos</li>
+              <li>Descuentos en la zona de comida</li>
+              <li>Renovación en $400</li>
+            </ul>
+            <button>Seleccionar</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <img src="https://i.ibb.co/zWCzb136/Kartking.jpg" alt="Kartking" border="0" id="fin">
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Kartking. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
