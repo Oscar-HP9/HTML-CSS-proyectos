@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador usando RPG Creature API.</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Buscar criaturas RPG</h1>
+  </header>
+  <main>
+    <div id="contenedor">
+      <div id="buscar">
+        <label for="search-input">Ingrese el nombre o el id de la criatura:</label>
+        <div id="entrada">
+          <input id="search-input" type="text" placeholder="Pyrolynx ó #1 ó 1" required>
+          <button id="search-button">BUSCAR</button>
+        </div>
+      </div>
+      <div class="sep"></div>
+      <div id="desc">
+        <div id="nombre">
+          <p id="creature-name"></p>
+          <p id="creature-id"></p>
+          <p id="special-name"></p>
+          <p id="special-desc"></p>
+          <div id="types"></div>
+        </div>
+        <h3>Estadísticas básicas</h3>
+        <div id="estadisticas">
+          <span class="texto">Peso</span><span id="weight" class="texto"></span>
+          <span class="texto">Altura</span><span id="height" class="texto"></span>
+          <span class="texto">HP</span><span id="hp" class="texto"></span>
+          <span class="texto">Ataque</span><span id="attack" class="texto"></span>
+          <span class="texto">Defensa</span><span id="defense" class="texto"></span>
+          <span class="texto">Ataque Esp.</span><span id="special-attack" class="texto"></span>
+          <span class="texto">Defensa Esp.</span><span id="special-defense" class="texto"></span>
+          <span class="texto">Velocidad</span><span id="speed" class="texto"></span>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
