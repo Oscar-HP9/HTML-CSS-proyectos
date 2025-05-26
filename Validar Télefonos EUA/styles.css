@@ -1,0 +1,255 @@
+:root{
+  --negro: #0F0F0F;
+  --gris: #242323;
+  --gris-claro: #626964;
+  --enfasis: #B388FF;
+  --hover: #7C4DFF;
+  --error: #FF5252;
+  --exito: #00E676;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 20px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Urbanist', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--negro);
+}
+
+h1, h3{
+  color: var(--enfasis);
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#opciones{
+  color: var(--enfasis);
+  width: 80%;
+
+}
+
+#caja{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+label:hover{
+  box-shadow: 0 0 10px var(--hover);
+}
+
+input[type="radio"]{
+  accent-color: var(--enfasis);
+  cursor: pointer;
+}
+
+.opcion-radio{
+  border: 2px solid var(--enfasis);
+  margin: 0 0 1rem 0;
+  padding: 0.5rem;
+}
+
+#programa{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#simbolos{
+  display: grid;
+  grid-template-columns: repeat(4,auto);
+  grid-gap: 5px;
+  width: 200px;
+  height: 50px;
+  border: 5px solid var(--gris-claro);
+  margin-bottom: 1rem;
+}
+
+#celular{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--gris);
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.oculto{
+  display: none !important;
+}
+
+#celular,
+#entradas{
+  width: 260px;
+}
+
+#tel{
+  width: 220px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 5px solid var(--gris-claro);
+  border-right: 5px solid var(--gris-claro);
+  border-top: 15px solid var(--gris-claro);
+  border-bottom: 15px solid var(--gris-claro);
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+
+#pantalla{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gris);
+  color: var(--enfasis);
+  text-align: center;
+  overflow-x: auto; 
+  white-space: nowrap;
+  padding: 0.5rem;
+}
+
+#grid-num{
+  width: 100%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: 1fr;
+}
+
+.num{
+  width: calc(200 / 3);
+  height: calc(300 * 0.7 / 3);
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: var(--enfasis);
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.num:hover{
+  cursor: pointer;
+  background-color: var(--hover);
+  color: white;
+}
+
+
+#entradas{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  row-gap: 1rem;
+  background-color: var(--gris);
+  color: var(--enfasis);
+  padding: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 1rem; 
+}
+
+#user-input{
+  text-align: center;
+  color: var(--enfasis);
+  background-color: var(--gris);
+  border: 3px solid var(--enfasis);
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  transition: box-shadow 0.3s ease;
+}
+
+#user-input:hover{
+  box-shadow: 0 0 10px var(--hover);
+}
+
+#user-input:focus{
+  box-shadow: 0 0 10px var(--hover);
+  outline: none; 
+}
+
+.botones{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.boton{
+  padding: 0.5rem;
+  font-weight: bold;
+  background-color: var(--enfasis);
+  border: none;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.boton:hover{
+  background-color: var(--hover);
+  color: white;
+  box-shadow: 0 0 8px var(--hover);
+}
+
+#results-div{
+  width: 60%;
+  min-width: 260px;
+  height: 320px;
+  background-color: var(--gris);
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+
+.exito{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--exito);
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid var(--gris);
+  overflow-x: auto;
+  font-size: 0.9rem;
+}
+
+.error{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--error);
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid var(--gris);
+  overflow-x: auto;
+  font-size: 0.9rem;
+}

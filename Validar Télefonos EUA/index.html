@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Validar teléfonos de EU</title>
+</head>
+<body>
+    <h1>Validar Teléfonos de EU</h1>
+    <div id="opciones">
+        <h3>Escoja que version quiere:</h3>
+        <div id="caja">
+            <label for="opcion-input" class="opcion-radio">INPUT<input type="radio" name="opc" value="entradas" id="opcion-input" checked></label>
+        
+            <label for="opcion-cel" class="opcion-radio">TELÉFONO<input type="radio" name="opc" value="celular" id="opcion-cel"></label>
+            
+            <label for="opcion-ambos" class="opcion-radio">AMBOS<input type="radio" name="opc" value="ambos" id="opcion-ambos"></label>
+        </div>
+    </div>
+    <div id="programa">
+        <!--Experimento tel--> 
+        <div id="celular" class="oculto">
+            <div id="tel">
+                <div id="pantalla"></div>
+                <div id="grid-num">
+                    <button class="num">1</button>
+                    <button class="num">2</button>
+                    <button class="num">3</button>
+                    <button class="num">4</button>
+                    <button class="num">5</button>
+                    <button class="num">6</button>
+                    <button class="num">7</button>
+                    <button class="num">8</button>
+                    <button class="num">9</button>
+                    <button class="num">X</button>
+                    <button class="num cero">0</button>
+                    <button class="num"><=</button>
+                </div>
+            </div>
+            <div id="simbolos">
+                <button class="num">(</button>
+                <button class="num">)</button>
+                <button class="num">-</button>
+                <button class="num">ESP</button>
+            </div>
+            <div class="botones">
+                <button id="check-btn-2" class="boton">REVISAR</button>
+                <button id="clear-btn-2" class="boton">LIMPIAR</button>
+            </div>
+        </div>
+         <!--Experimento tel--> 
+        <div id="entradas">
+            <p>Ingrese el número a validar.</p>
+            <input type="text" id="user-input" placeholder="NÚMERO AQUÍ">
+            <div class="botones">
+                <button id="check-btn" class="boton">REVISAR</button>
+                <button id="clear-btn" class="boton">LIMPIAR</button>
+            </div>
+        </div>
+    </div>
+    <div id="results-div"></div>
+</body>
+<script src="./script.js"></script>
+</html>
