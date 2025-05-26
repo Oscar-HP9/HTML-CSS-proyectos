@@ -1,0 +1,154 @@
+:root {
+  /* Colores base */
+  --color-background: #0D0D0D;
+  --color-section: #1E1E1E;
+  --color-primario: #1F6FEB;
+  --color-acento: #3FB68B; 
+  --color-hover: #2B7C60;
+  --color-texto: #E6EDF3;
+}
+
+html{
+  font-size: 18px;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: var(--color-background);
+  width: 100%;
+  height: 100vh;
+}
+
+header{
+  color: var(--color-primario);
+  text-align: center;
+  padding: 1rem;
+}
+
+h1{
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+main{
+  width: 80%;
+  margin: 0 auto;
+  color: var(--color-texto);
+}
+
+#entradas{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;    
+  width: 100%;
+}
+
+.relleno{
+  text-align: center;
+  padding: 5px;
+  border: 4px solid var(--color-primario);
+  min-width: 200px;
+}
+
+#span-precio{
+  margin-left: 1rem;
+  font-weight: bold;
+  border-bottom: 2px double var(--color-acento)
+}
+
+#cash {
+  text-align: center;
+  background-color: var(--color-section);
+  border: 2px solid var(--color-acento);
+  color: var(--color-acento);
+  padding: 0.5rem;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#cash:focus {
+  border-color: var(--color-primario);
+  box-shadow: 0 0 0 2px rgba(31, 111, 235, 0.3);
+}
+
+#purchase-btn{
+  margin: 1rem auto 2rem auto;
+  display: block;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  border-radius: 15px;
+  font-weight: bold;
+  background-color: var(--color-acento);
+  transition: box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+  border: 2px solid var(--color-background);
+}
+
+#purchase-btn:hover{
+  background-color: var(--color-hover);
+  color: var(--color-texto);
+  box-shadow: 0 0 20px 1px var(--color-acento);
+  cursor: pointer;
+}
+
+#caja{
+  width: 90%;
+  max-width: 900px;
+  min-width: 270px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem 0;
+  margin: 0 auto;
+}
+
+.pantalla {
+  width: 35%;
+  min-width: 270px;
+  height: 400px;
+  background-color: var(--color-section);
+  margin-bottom: 1rem;
+  border: 5px solid var(--color-primario);
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.pantalla h4{
+  width: 100%;
+  padding: 0.8rem 0.5rem;
+  background-color: var(--color-acento);
+  color: black;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.cont{
+  width: 100%;
+  padding-left: 1.2rem;
+  padding-top: 1rem;
+}
+
+.cont p{
+  margin-bottom: 0.5rem;
+}
+
+li{
+  margin-bottom: 0.5rem;
+}
+
+.span-dinero{
+  font-weight: bold;
+  color: var(--color-acento);
+  margin-left: 0.4rem;
+}
+

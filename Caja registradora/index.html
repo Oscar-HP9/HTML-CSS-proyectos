@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Título de la página</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Caja registradora</h1>
+    <h3>Programa que simula una caja registradora</h3>
+  </header>
+  <main>
+    <div id="entradas">
+      <div id="precio" class="relleno">El precio es: <span id="span-precio">11.95</span></div>
+      <label for="cash" class="relleno">Ingrese su dinero: <input type="number" id="cash" placeholder="DINERO AQUÍ"></label>
+    </div>
+    <button id="purchase-btn">COMPRAR</button>
+    <div id="caja">
+      <div id="dinero" class="pantalla">
+        <h4>Dinero en caja por denominación</h4>
+        <div class="cont">
+          <ul>
+            <li>PENNY: <span class="span-dinero">1.01</span></li>
+            <li>NICKEL: <span class="span-dinero">2.05</span></li>
+            <li>DIME: <span class="span-dinero">3.1</span></li>
+            <li>QUARTER: <span class="span-dinero">4.25</span></li>
+            <li>ONE: <span class="span-dinero">90</span></li>
+            <li>FIVE: <span class="span-dinero">55</span></li>
+            <li>TEN: <span class="span-dinero">20</span></li>
+            <li>TWENTY: <span class="span-dinero">60</span></li>
+            <li>ONE HUNDRED: <span class="span-dinero">100</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pantalla">
+        <h4>Cambio</h4>
+        <div id="change-due" class="cont"></div>
+      </div>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
